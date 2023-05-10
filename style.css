@@ -50,9 +50,18 @@ body {
 }
 
 .card .card__heading {
+  display: inline-block;
   margin-top: 2.4rem;
   text-align: center;
   width: 85%;
+  background-image: linear-gradient(
+    to right,
+    var(--color-grey-blue),
+    var(--color-grey-blue-dark)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .card .card__text {
@@ -61,13 +70,4 @@ body {
   width: 85%;
   margin-bottom: 3rem;
   color: var(--color-grey-blue);
-}
-
-/* Footer Copyright and Attribution */
-
-.attribution {
-  text-align: center;
-  position: fixed;
-  bottom: 0;
-  margin-bottom: 2rem;
 }
